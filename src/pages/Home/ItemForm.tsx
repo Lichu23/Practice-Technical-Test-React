@@ -34,7 +34,7 @@ function ItemForm() {
   return (
     <div>
       <h1>Test React</h1>
-      <form onSubmit={addItemToList}>
+      <form onSubmit={addItemToList} aria-label="Add items to list" >
         <input onChange={handleChange} value={inputValue} />
         {error ? (
           <p style={{ color: "red" }}>El campo debe contener minimo 1 letra</p>
