@@ -19,9 +19,11 @@ function ItemList({ itemList, handleDeleteItem }: ItemListProps) {
           <div>
             {itemList.map((item) => (
               <ul key={item.id}>
-                <button onClick={() => handleDelete(item.id)}>
-                  {item.value}
-                </button>
+                <li>
+                  <button onClick={() => handleDelete(item.id)}>
+                    {item.value}
+                  </button>
+                </li>
               </ul>
             ))}
           </div>
